@@ -6,7 +6,7 @@
 </head>
 <body>
 
-<form action="" method="post">
+<form action="{% url 'blog:article_edit_page_action' %}" method="post">{% csrf_token %}
     <label>博客标题
         <input type="text" name="title"/>
     </label>
