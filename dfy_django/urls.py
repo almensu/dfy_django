@@ -18,10 +18,11 @@ from django.conf.urls import url
 from django.contrib import admin
 from django.urls import include
 
+
 urlpatterns = [
     url('^admin/', admin.site.urls),
     # url('^blog/', include('blog.urls')),
     # url('^blog_tools/', include('blog_tools.urls')),
-    url('^blog/', include('blog.urls'), name='blog'),
-    url('^blog_tools/', include('blog_tools.urls'), name='blog_tools'),
+    url('^blog/', include('blog.urls', namespace='blog')),
+    # url('^blog_tools/', include('blog_tools.urls', namespace='blog_tools')),
 ]

@@ -7,8 +7,7 @@ from . import models
 # Create your views here.
 
 
-# def index(request):
-#     return HttpResponse('hello world!dfy')
+
 
 def index(request):
     # article = models.Article.objects.get(pk=1)
