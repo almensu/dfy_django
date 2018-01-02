@@ -4,8 +4,6 @@ from __future__ import unicode_literals
 from django.shortcuts import render
 from django.http import HttpResponse
 from . import models
-from django.template import RequestContext
-
 
 # Create your views here.
 
